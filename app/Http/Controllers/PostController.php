@@ -23,4 +23,6 @@ class PostController extends Controller
             'post' => $post
         ]);
     }
+
+
 }
