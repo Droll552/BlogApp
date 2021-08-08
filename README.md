@@ -1,1 +1,1 @@
-Blog application, that was created during Laracasts course
+Blog application following Laracasts 
