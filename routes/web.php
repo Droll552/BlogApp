@@ -29,7 +29,7 @@ Route::post('login', [SessionsController::class, 'store'])->middleware('guest');
 Route::post('logout', [SessionsController::class, 'destroy'])->middleware('auth');
 
 //Admin
-Route::middleware('caan:admin')->group(function () {
+Route::middleware('can:admin')->group(function () {
 //    Does the same thing as all of routes
 //    Route::resource('admin/posts', AdminPostController::class)->except('show');
     Route::get('admin/posts/create', [AdminPostController::class, 'create']);
